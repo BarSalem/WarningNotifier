@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "whatsapp-messages"
+version = "0.1.0"
+description = ""
+authors = ["Bar Salem <barsalem555@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+loguru = "^0.7.2"
+selenium = "^4.15.1"
+arrow = "^1.3.0"
+setuptools = "^68.2.2"
+pyautogui = "^0.9.54"
+requests = "^2.31.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
