@@ -56,7 +56,7 @@ def log_and_swallow_exceptions(func):
 
 
 class TimeSleeper:
-    def __init__(self, seconds: int, max_seconds_to_sleep: int = 30):
+    def __init__(self, seconds: int, max_seconds_to_sleep: int = 15):
         self.seconds = seconds
         self._max_seconds_to_sleep = max_seconds_to_sleep
 
@@ -78,4 +78,5 @@ class TimeSleeper:
         return min(self.seconds, self._max_seconds_to_sleep)
 
     def reset(self):
+        logger.info(f"Resetting sleep seconds in timer to: 2")
         self.seconds = 2
